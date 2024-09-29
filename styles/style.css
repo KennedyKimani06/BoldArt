@@ -1,0 +1,30 @@
+/* General Image Styles */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+.logo {
+    height: 60px;  /* Adjust based on the height you want */
+    width: auto;
+}
+#artists img {
+    border-radius: 10px; /* Adds some rounded corners */
+    object-fit: cover;
+    max-height: 400px; /* Limits height to prevent too-large images */
+    width: 100%;
+}
+#art-lovers img {
+    border-radius: 10px; 
+    object-fit: cover;
+    max-height: 400px;
+    width: 100%;
+}
+.experience-card img {
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 250px; /* Set to a size that fits your design */
+    width: 100%;
+}
