@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bold Art Gallery - Hangout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="py-4 bg-dark text-white text-center">
+        <h1>Bold Art Hangout Gallery</h1>
+        <p>Explore moments from the event</p>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-container container py-5">
+        <div class="row">
+            <!-- 10 Images in the Gallery -->
+            <div class="col-md-4 col-sm-6 mb-4">
+                <a href="images/image1-large.jpg" data-toggle="lightbox">
+                    <img src="images\Hangout\H1.jpeg" class="img-fluid gallery-image" alt="Event Image 1">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <a href="images/image1-large.jpg" data-toggle="lightbox">
+                    <img src="images\Hangout\H2.jpeg" class="img-fluid gallery-image" alt="Event Image 2">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <a href="images/image3-large.jpg" data-toggle="lightbox">
+                    <img src="images\Hangout\H3.jpeg" class="img-fluid gallery-image" alt="Event Image 3">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <a href="images/image4-large.jpg" data-toggle="lightbox">
+                    <img src="images\Hangout\H4.jpeg" class="img-fluid gallery-image" alt="Event Image 4">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <a href="images/image5-large.jpg" data-toggle="lightbox">
+                    <img src="images\Hangout\H5.jpeg" class="img-fluid gallery-image" alt="Event Image 5">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <a href="images/image6-large.jpg" data-toggle="lightbox">
+                    <img src="images\Hangout\H6.jpeg" class="img-fluid gallery-image" alt="Event Image 6">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <a href="images/image7-large.jpg" data-toggle="lightbox">
+                    <img src="images\Hangout\H7.jpeg" class="img-fluid gallery-image" alt="Event Image 7">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <a href="images/image8-large.jpg" data-toggle="lightbox">
+                    <img src="images\Hangout\H8.jpeg" class="img-fluid gallery-image" alt="Event Image 8">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <a href="images/image9-large.jpg" data-toggle="lightbox">
+                    <img src="images\Hangout\H9.jpeg" class="img-fluid gallery-image" alt="Event Image 9">
+                </a>
+            </div>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <a href="images/image10-large.jpg" data-toggle="lightbox">
+                    <img src="images\Hangout\H10.jpeg" class="img-fluid gallery-image" alt="Event Image 10">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JavaScript and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Lightbox JavaScript for gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    </script>
+</body>
+</html>
